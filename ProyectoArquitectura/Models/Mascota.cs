@@ -3,9 +3,8 @@ using ProyectoArquitectura.Exceptions;
 
 namespace ProyectoArquitectura.Models
 {
-    /// <summary>
+
     /// Clase Mascota con lo esencial.
-    /// </summary>
     public class Mascota
     {
         // Propiedades de la mascota
@@ -15,15 +14,11 @@ namespace ProyectoArquitectura.Models
         public int Edad { get; set; }
         public bool EstaVacunado { get; set; }
 
-        /// <summary>
         /// Constructor vacío necesario para que gestorarchivos pueda deserializar el objeto.
-        /// </summary>
         public Mascota() { }
 
-        /// <summary>
         /// Constructor con parametros para instanciar fácilmente en el código.
         /// Incluye validaciones y uso de Excepciones.
-        /// </summary>
         public Mascota(int id, string especie, string nombre, int edad, bool vacunado)
         {
             if (string.IsNullOrWhiteSpace(nombre))
@@ -39,9 +34,7 @@ namespace ProyectoArquitectura.Models
             EstaVacunado = vacunado;
         }
 
-        /// <summary>
         /// Sobrescritura para mostrar fácilmente los datos en consola.
-        /// </summary>
         public override string ToString()
         {
             string estadoVacuna = EstaVacunado ? "Sí" : "No";
