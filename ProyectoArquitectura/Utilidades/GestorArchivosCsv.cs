@@ -5,17 +5,11 @@ using ProyectoArquitectura.Models;
 
 namespace ProyectoArquitectura.Utilidades
 {
-    /// <summary>
     /// Clase encargada de manejar la lectura y escritura de archivos físicos en formato CSV.
     /// Utilizamos System.IO para manipular líneas de texto separadas por comas.
-    /// </summary>
     public class GestorArchivosCsv
     {
-        /// <summary>
         /// Escribe una lista de mascotas en un archivo CSV.
-        /// </summary>
-        /// <param name="lista">Inventario de mascotas a guardar.</param>
-        /// <param name="rutaArchivo">Ruta del archivo CSV de destino.</param>
         public static void GuardarMascotasEnCsv(List<Mascota> lista, string rutaArchivo)
         {
             try
@@ -46,11 +40,7 @@ namespace ProyectoArquitectura.Utilidades
             }
         }
 
-        /// <summary>
         /// Lee un archivo CSV, salta la cabecera y reconstruye la lista de Mascotas.
-        /// </summary>
-        /// <param name="rutaArchivo">Ruta del archivo a cargar.</param>
-        /// <returns>La lista de mascotas parseada desde el archivo.</returns>
         public static List<Mascota> LeerMascotasDesdeCsv(string rutaArchivo)
         {
             List<Mascota> listaResultante = new List<Mascota>();
