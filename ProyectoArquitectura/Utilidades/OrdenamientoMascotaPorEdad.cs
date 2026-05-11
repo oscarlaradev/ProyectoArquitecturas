@@ -3,17 +3,11 @@ using ProyectoArquitectura.Models;
 
 namespace ProyectoArquitectura.Utilidades
 {
-    /// <summary>
     /// Clase que implementa la interfaz genérica IComparer para ordenar listas de mascotas por su edad.
-    /// </summary>
     public class OrdenamientoMascotaPorEdad : IComparer<Mascota>
     {
-        /// <summary>
         /// Método de la interfaz que compara dos mascotas.
-        /// </summary>
-        /// <param name="x">Mascota 1 a comparar.</param>
-        /// <param name="y">Mascota 2 a comparar.</param>
-        /// <returns>Un valor entero: menor que 0 si x es menor que y, 0 si son iguales, y mayor que 0 si x es mayor.</returns>
+        /// Regresa un valor entero: menor que 0 si x es menor que y, 0 si son iguales, y mayor que 0 si x es mayor.
         public int Compare(Mascota? x, Mascota? y)
         {
             // Si ambas son nulas, son iguales
