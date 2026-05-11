@@ -7,10 +7,9 @@ using ProyectoArquitectura.Exceptions;
 
 namespace ProyectoArquitectura.Runners
 {
-    /// <summary>
+
     /// Runner principal que maneja toda la lógica del sistema.
     /// Integramos Creación, Lectura, Actualización, Eliminación, Búsqueda, Validación y Manejo de Archivos por ruta.
-    /// </summary>
     public class RunnerGestionAdopcion
     {
         // Uso de lista genérica para manejar el inventario en memoria ram
@@ -22,9 +21,7 @@ namespace ProyectoArquitectura.Runners
             _inventarioMascotas = new List<Mascota>();
         }
 
-        /// <summary>
         /// Método principal que contiene el ciclo del (menú) del programa.
-        /// </summary>
         public void EjecutarSistema()
         {
             bool salir = false;
@@ -94,9 +91,7 @@ namespace ProyectoArquitectura.Runners
         
         //operaciones Create , Read, Update, Delete  osea las (crud)
 
-        /// <summary>
-        /// CREATE: Lógica para capturar datos de consola e instanciar (Registrar/Insertar) una Mascota.
-        /// </summary>
+        /// Lógica para capturar datos de consola e instanciar (Registrar/Insertar) una Mascota.
         private void RegistrarMascota()
         {
             Console.WriteLine("\n--------- 1. REGISTRAR NUEVA MASCOTA -------------");
@@ -170,9 +165,7 @@ namespace ProyectoArquitectura.Runners
             }
         }
 
-        /// <summary>
-        /// READ: Recorre la lista de mascotas para visualizarlas/consultarlas.
-        /// </summary>
+        /// Recorre la lista de mascotas para visualizarlas/consultarlas.
         private void MostrarMascotas()
         {
             Console.WriteLine("\n---------- 2. INVENTARIO DE MASCOTAS ------------");
@@ -189,9 +182,7 @@ namespace ProyectoArquitectura.Runners
             }
         }
 
-        /// <summary>
         /// BUSCAR: Encuentra una mascota específica usando su ID.
-        /// </summary>
         private void BuscarMascota()
         {
             Console.WriteLine("\n----------- 3. BUSCAR MASCOTA -------------");
@@ -218,9 +209,7 @@ namespace ProyectoArquitectura.Runners
             }
         }
 
-        /// <summary>
-        /// UPDATE: Busca una mascota y permite editar/actualizar sus campos.
-        /// </summary>
+        /// Busca una mascota y permite editar/actualizar sus campos.
         private void EditarMascota()
         {
             Console.WriteLine("\n------------ 4. EDITAR/ACTUALIZAR MASCOTA ---------------");
@@ -273,9 +262,7 @@ namespace ProyectoArquitectura.Runners
             }
         }
 
-        /// <summary>
         /// DELETE: Busca una mascota y la borra de la lista.
-        /// </summary>
         private void EliminarMascota()
         {
             Console.WriteLine("\n--------- 5. ELIMINAR/BORRAR MASCOTA ----------");
@@ -297,9 +284,7 @@ namespace ProyectoArquitectura.Runners
             }
         }
 
-        /// <summary>
         /// MANIPULAR: Utiliza el IComparer para ordenar la lista genérica.
-        /// </summary>
         private void ManipularMascotas()
         {
             Console.WriteLine("\n---------- 6. ORDENAR POR EDAD -----------");
@@ -319,9 +304,7 @@ namespace ProyectoArquitectura.Runners
         
         // SISTEMA DE ARCHIVOS (CARGAR/GUARDAR)
         
-        /// <summary>
         /// GUARDAR: Pide la ruta del archivo y guarda la lista CSV.
-        /// </summary>
         private void GuardarYExportar()
         {
             Console.WriteLine("\n------------ 7.GUARDAR DATOS -------------");
@@ -338,9 +321,7 @@ namespace ProyectoArquitectura.Runners
             }
         }
 
-        /// <summary>
         /// CARGAR: Pide la ruta del archivo y lee el CSV, reemplazando la lista actual.
-        /// </summary>
         private void CargarArchivo()
         {
             Console.WriteLine("\n----------- 8. CARGAR/LEER ARCHIVO ----------");
