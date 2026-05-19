@@ -31,8 +31,8 @@ namespace ProyectoArquitectura.Runners
                 
                 Console.WriteLine(" |   SISTEMA DE GESTIÓN DE REFUGIO DE MASCOTAS   | ");
                 Console.WriteLine("---------------------------------------------------");
-                Console.WriteLine(" 1. Registrar / Insertar nueva mascota");
-                Console.WriteLine(" 2. Consultar / Visualizar todas las mascotas");
+                Console.WriteLine(" 1. Registrar o Insertar nueva mascota");
+                Console.WriteLine(" 2. Consultar o Visualizar todas las mascotas");
                 Console.WriteLine(" 3. Buscar mascota por ID");
                 Console.WriteLine(" 4. Actualizar datos de una mascota");
                 Console.WriteLine(" 5. Borrar mascota del registro");
